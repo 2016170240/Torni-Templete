@@ -1,0 +1,39 @@
+.blog{
+    .blog-flex{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include margin-right3 ;
+
+        .blog1{
+            flex: (100% / 3)-3%;
+            @media(max-width : 768px){
+                flex: 100%;
+            }
+          
+            .imgblog{
+                img{
+                    width:100%;
+                }
+            }
+            h3{
+                font-size: 25px;
+                margin: 25px 0;
+                cursor: pointer;
+                @include transition;
+                &:hover{
+                    color: $maincolor ;
+                }
+            }
+            p{
+                line-height: 30px;
+                color: #6c757d;
+            }
+        }
+    }
+    .mr1,.mr2{
+        @media(max-width : 768px){
+            margin-right: 0!important;
+        }
+    }   
+}

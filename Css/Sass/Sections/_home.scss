@@ -1,0 +1,114 @@
+
+.top-parent{
+    background-image: url("../images/25.jpg");
+    @include bg-parallex(1);
+    height: 100%;
+    overflow: hidden;
+    .home{
+        height: 700px;
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        @media (max-width:375px){
+            
+        height: 800px;
+        }
+        .todown{   
+            position: absolute;
+            margin-top: 15px;
+            bottom:10%;
+            left: 50%;
+            z-index: 10;
+            
+        -webkit-animation: downIcon ease-in-out 3s infinite;
+        animation: downIcon ease-in-out 3s infinite;
+          i{
+              font-size: 40px;
+              color: $maincolor;
+          }
+        }
+@keyframes downIcon {
+    0% {
+        bottom: 70px;
+        opacity: 1;
+    }
+
+    50% {
+        bottom: 30px;
+        opacity: 0.7;
+    }
+    
+}
+
+
+#particles-js
+        {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  @include gradaint(bottom,rgba(#000,0) ,rgba(#000,0.222),rgba(#000,0.65));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+        }
+    }
+    .home-title
+    {
+        transform: translate(0,70%);
+        width: 60%;
+        @media(max-width: 1135px) and (min-width: 986px){
+            transform: translate(0,70%);
+        width: 80%;
+        }
+        @media(max-width: 987px) and (min-width: 792px){
+            transform: translate(0,35%);
+        width: 90%;
+        }
+        @media(max-width: 792px) and (min-width: 678px){
+            transform: translate(0,35%);
+            width: 100%;
+        }
+        @media(max-width:677px) and (min-width: 477px){
+            transform: translate(0,50%);
+            width: 100%;
+        }
+        @media(max-width:476px) and (min-width: 425px){
+            transform: translate(0,30%);
+            width: 100%;
+        }
+      
+        @media(max-width:425px) and (min-width: 375px){
+            transform: translate(0,60%);
+            width: 100%;
+        }
+        @media(max-width:374px) and (min-width: 0){
+            transform: translate(0,30%);
+            width: 100%;
+        }
+        
+    }
+    h2 {
+        @media(max-width:675px) and (min-width: 426px){
+            font-size: 30px;
+
+        }
+        @media(max-width:425px) and (min-width: 0){
+            font-size: 30px;
+           margin-bottom: 20px;
+        }
+        font-size: 52px;
+        color: rgba(255, 255, 255, 0.93);
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    p{
+        margin: 20px 0;
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 18px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        line-height: 40px;
+      
+        
+    }
+}

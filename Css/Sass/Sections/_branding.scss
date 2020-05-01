@@ -1,0 +1,106 @@
+.branding{
+    
+    margin-top: 40px;
+    .prand-title{
+        width: 100%;
+    }
+    h2{
+        font-size: 35px;
+       
+        margin-bottom:20px ;
+    }
+     p{
+        color: #6c757d;
+        width: 80%;
+        justify-content: center;
+        line-height: 40px;
+        font-size: 18px;
+        display: inline-block;
+     }
+     .brand-flex1{
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         margin-top: 50px;
+         @include  margin-right3;
+         
+         .b1{
+            flex: (100% / 3)-6%;
+            border: 1px solid #eee ;
+            border-radius: 3px;
+            text-align: center;
+            padding:50px 0;
+            margin-top: 20px;
+            position: relative;
+            @include transition;
+            overflow: hidden;
+            @media(max-width : 768px) and (min-width : 426px){
+                flex: (100% / 2)-6%;
+            }
+            @media(max-width : 426px) and (min-width : 0){
+                flex:100%;
+            }
+            img{
+                width:80%;
+                margin-bottom: 20px;
+            }
+            h5{
+                color: $maincolor;
+                font-size: 15px;
+                text-transform: uppercase;
+            }
+            h4{
+                font-size: 20px;
+            }
+            &:hover{
+                background-color: #21c87a;
+                border-color: #21c87a;
+            }
+            &:hover h5,&:hover h4{
+                
+                color: #fff;
+            }
+            &:hover img{
+                @include prefixer(transform,scale(1.2),moz o webkit);
+                @include transition;
+
+            }
+         }
+         .x{
+             margin-right:0;
+         }
+     }
+    .mr2{
+        @media(max-width : 768px) and (min-width : 426px){
+           margin-right: 0!important;
+        }
+       
+    }
+    .z.mr2{
+        @media(max-width : 768px) and (min-width : 426px){
+           margin-right: 20px!important;
+        }
+       
+    }
+    .mr3{
+        @media(max-width : 768px) and (min-width : 426px){
+            margin-right:20px!important;
+         }
+    }
+    
+    .z.mr3{
+        @media(max-width : 768px) and (min-width : 426px){
+            margin-right:0!important;
+         }
+    }
+    .y.mr1{
+        @media(max-width : 768px) and (min-width : 426px){
+            margin-right:0!important;
+         }
+    }
+    .mr1,.mr2,.mr3{
+        @media(max-width : 425px) and (min-width : 0){
+            margin-right:0!important;
+         }
+    }
+}

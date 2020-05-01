@@ -1,0 +1,25 @@
+@import "./Helpers/variables";
+@import "./Helpers/mixins";
+
+@import "./Sections/preloader";
+@import "./Global/global";
+@import "./Layouts/header";
+@import "./Components/grid";
+@import "./Components/buttons";
+@import "./Components/title";
+@import "./Sections/home";
+@import "./Sections/about";
+@import "./Sections/video";
+@import"./Sections/brand";
+@import"./Sections/counter";
+@import"./Sections/service";
+@import"./Sections/work";
+@import"./Sections/branding";
+@import"./Sections/pricing";
+@import"./Sections/clients ";
+@import"./Sections/creative";
+@import"./Sections/blog";
+@import"./Sections/question";   
+@import"./Sections/supporters";
+@import"./Sections/contact";
+@import "./Layouts/footer";

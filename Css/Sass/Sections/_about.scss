@@ -1,0 +1,106 @@
+.About{
+    .about-flex{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .about1:hover .top-p span{
+            width: 100%;
+            @include transition;
+        }
+        .about2:hover .top-p span{
+            width: 100%;
+            @include transition;
+            @media (max-width:889px) and (min-width:0){
+                width: 0%;
+            }
+        }
+        
+        .about1,.about2,.about3{
+            flex:(100%/3) - 2%;
+             margin-top: 50px;
+            cursor: pointer;
+            @include transition;
+
+            @media (max-width:889px) and (min-width:0){
+                flex: 100%;
+                margin-right: 0!important;
+            }
+            &:hover{
+                transform: translate(10px);
+                @include transition;
+            }
+            &:hover .top-p p{
+                border-radius: unset;
+                background-color: $maincolor;
+                color: #fff;
+                @include transition;
+            }
+            &:hover .card-title-about h3 ,  .card-arrow i
+            {
+                color: $maincolor;
+            }
+            .top-p{
+                margin-bottom: 20px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                @include transition;
+                font : {weight: bold;size:18px};
+                position: relative;
+                p{
+                text-align: center;
+                border: 3px solid $maincolor;
+                color: $maincolor;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #fff;
+                line-height: 30px;
+                }
+                span{
+                    position: absolute;
+                    display: inline-block;
+                    width: 0%;
+                    height: 3px;
+                    top: 45%;
+                    left: 55%;
+                    background-color: $maincolor;
+                    @media (max-width:889px) and (min-width:0){
+                        display: none
+                    }
+                }
+            }
+            .card-about{
+            background-color: #fff;
+            @include prefixer( box-shadow,0px 3px 10px 0px rgba(38, 59, 94, 0.1),o moz webkit);
+            padding: 10px 15px;
+            border-radius: 3px;
+            .card-icon{
+                margin-bottom: 20px;
+            }
+            .card-title-about{
+                h3{
+                    font-size: 25px;
+                    @media (max-width : 1024px) and (min-width :890px){
+                        font-size: 20px;
+                    }
+                }
+            }
+                .card-p-about{
+            p{
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+        .card-arrow i{
+            margin-bottom: 20px;
+            font-weight: normal;
+            font-size: 30px;
+        }
+            }
+         
+          
+        }
+       @include margin-right3;
+    }
+}

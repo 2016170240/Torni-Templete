@@ -1,0 +1,42 @@
+.Clients{
+padding: 70px 0;
+background-color: #F7F7F7  ;
+.parentslick{
+    margin-top: 60px;
+    text-align: center;
+    .f-img{width: 70px;
+        border: 6px solid #eee;
+        border-radius: 50%;
+        margin: auto;
+        img{
+            
+    border-radius: 50%;
+        }
+    }
+    .h5{
+        font-size: 20px;
+        margin:20px 0 10px  0;
+    }
+    h6{
+        color: $maincolor;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+   p{
+       line-height: 30px;
+       color: #6c757d;
+   }
+}
+}
+.owl-nav button {
+    border-radius: 2px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+    background-color: #D6D6D6!important;
+    margin-left: 10px;
+}
+    

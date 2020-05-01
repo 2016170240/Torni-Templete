@@ -1,0 +1,100 @@
+.creative{
+    h2{
+        text-align: center;
+        margin: auto;
+        font-weight: normal;
+        font-size: 40px;
+        width: 90%;
+        span{
+            font-weight: bold;
+        }
+    }
+   
+    .divp{
+        p{
+            color:#6c757d;
+            line-height: 30px;
+            width: 90%;
+            text-align: center;
+           
+            margin: auto;
+        }
+    }
+    .creative-flex{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .f-creative{
+            flex: (100% / 4)-2%;
+            margin-top: 60px;
+            .creative-icon{
+                color: $maincolor;
+                margin-top: 10px;
+                i{
+                padding-right: 20px;}
+            }
+        }
+    .creative-title {
+        margin-top: 20px;
+        h3{
+            font:
+            {
+                size:25px;
+                weight:normal;
+            }
+        }
+        p{
+            color: #6c757d;
+            margin-top: 5px;
+        }
+    }
+}
+}
+
+/*Hypnosis*/
+.Hypnosis{
+    background-color: #F7F7F7;
+    padding:50px 0;
+    .Hypnosis-flex{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .Hypnosis-title{
+            flex:70%;
+            margin: auto;
+            line-height: 30px;
+            @media(max-width : 1024px){
+                flex: 100%;
+            }
+            h2{
+                font-size: 40px;
+            }
+            p{
+                color: #6c757d;
+            }
+            button{
+                background-color: #fff;
+                color: $maincolor;
+                border: 2px solid $maincolor;
+                padding:15px 20px;
+                border-radius: 3px;
+                font-weight: bold;
+                font-size: 16px;
+                margin-top: 20px;
+                cursor: pointer;
+                @include transition;
+                &:hover{
+                    background-color: $maincolor;
+                    color: #fff;
+                }
+            }
+        }
+        .Hypnosis-img{
+            flex:28%;   
+            img{
+            width:100%;
+            height: auto    ;
+        }
+        }
+    }
+}

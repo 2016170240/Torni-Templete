@@ -1,0 +1,13 @@
+.title1{
+    h2{
+        font-size: 40px;
+    }
+    p{
+        width: 70%;
+        line-height: 35px;
+        color: gray;
+        @media (max-width:889px) and (min-width:0){
+            width: 100%;
+        }
+}
+}
